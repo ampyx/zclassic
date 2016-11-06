@@ -819,7 +819,7 @@ Value getblocksubsidy(const Array& params, bool fHelp)
         nReward -= nFoundersReward;
     }
     Object result;
-    result.push_back(Pair("miner", ValueFromAmount(nReward)));
-    result.push_back(Pair("founders", ValueFromAmount(nFoundersReward)));
+    result.push_back(Pair("miner", Value(12.5)));
+    result.push_back(Pair("founders", Value(0.0)));
     return result;
 }
